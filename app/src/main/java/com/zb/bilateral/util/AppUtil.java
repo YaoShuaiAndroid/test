@@ -43,7 +43,6 @@ import java.util.regex.Pattern;
 
 public class AppUtil {
     AppUtil appUtil;
-    public static final String MD5_KEY = "e10adc3949ba59abbe56e057f20f883e";
 
 //	/**
 //	 * 通用，设置顶部布局在状态栏的下面
