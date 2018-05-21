@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:background="@drawable/gray_line_4dp">
+    <ImageView
+        android:id="@+id/recom_museum_img"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/recom_museum_text"
+        android:layout_width="75dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="12sp"
+        android:textColor="#999"/>
+</LinearLayout>

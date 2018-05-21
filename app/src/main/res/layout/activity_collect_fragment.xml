@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/museum_top_rel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/top_color">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="博物馆"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:id="@+id/top_left_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/left_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="馆藏"
+            android:textSize="17sp"
+            android:textColor="#FFF"/>
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/collect_list_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        >
+        <com.zb.bilateral.view.LuRecyclerView
+            android:id="@+id/collect_list_recyler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <include
+        android:id="@+id/empty_view"
+        layout="@layout/no_data"
+        android:visibility="gone"/>
+</android.support.design.widget.CoordinatorLayout>

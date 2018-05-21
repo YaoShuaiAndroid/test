@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="225dp"
+        android:layout_height="115dp">
+        <ImageView
+            android:id="@+id/museum_acticity_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <TextView
+            android:id="@+id/activity_status_text"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="12.5sp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@mipmap/buttom_back"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/museum_activity_name"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:textColor="#444"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:lineSpacingExtra="5dp"
+        android:layout_margin="10dp"
+        android:textSize="16sp"
+        />
+</LinearLayout>

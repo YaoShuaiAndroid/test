@@ -1,0 +1,34 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!-- 设置activity切换动画 -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>
+    </style>
+
+    <style name="AppTheme.Widget.TextView" parent="android:Widget.Holo.Light.TextView">
+        <item name="fontPath">fonts/pingfang</item>
+    </style>
+
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">  <!--TAB文字样式-->
+        <item name="textAllCaps">false</item>    <!--英文大写,默认true-->
+    </style>
+
+    <style name="anim_menu_bottombar">
+        <item name="android:windowEnterAnimation">@anim/menu_bottombar_in</item>
+        <item name="android:windowExitAnimation">@anim/menu_bottombar_out</item>
+    </style>
+
+    <style name="anim_menu_topbar">
+        <item name="android:windowEnterAnimation">@anim/menu_topbar_in</item>
+        <item name="android:windowExitAnimation">@anim/menu_topbar_out</item>
+    </style>
+
+    <style name="CustomRadioBtn2">
+        <item name="android:gravity">center</item>
+        <item name="android:button">@drawable/mycustome_radio_selctor</item>
+    </style>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#f5f5f5">
+        <TextView
+            android:id="@+id/list_noread_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#666"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="80dp"
+            android:gravity="center_vertical"
+            android:text="我像入驻，但是无法提交"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/main_color"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:textSize="12sp"
+            android:text="未回复"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"/>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_wechat_capture"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.google.zxing.client.android.AutoScannerView
+        android:id="@+id/autoscanner_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/top_color"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/top_left_rel"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/top_left_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@mipmap/left_back"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/top_center_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:maxLines="1"
+            android:text="文物扫描"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:textSize="15dp"
+            android:gravity="center" />
+    </RelativeLayout>
+
+</RelativeLayout>

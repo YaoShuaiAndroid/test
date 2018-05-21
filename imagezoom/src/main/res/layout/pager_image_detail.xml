@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3c3b40">
+    <TextView
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+    <RelativeLayout
+        android:id="@+id/image_detail_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <RelativeLayout
+            android:id="@+id/top_left_rel"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/left_back" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.liji.imagezoom.widget.HackyViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/image_detail_rl"
+        android:layout_above="@+id/indicator"
+        android:background="#3c3b40" />
+</RelativeLayout>

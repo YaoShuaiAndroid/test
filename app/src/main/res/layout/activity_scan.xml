@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/develop_top_rel"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="请扫描文物对应二维码"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        />
+
+    <TextView
+        android:id="@+id/hhf_ercode"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="扫码"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/code_buttom"/>
+</LinearLayout>

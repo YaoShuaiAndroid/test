@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/museum_detail_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/develop_top_rel" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_margin="10dp">
+
+                    <com.youth.banner.Banner
+                        android:id="@+id/museum_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="175dp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/museum_entry_tour"
+                        android:layout_width="60dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="20dp"
+                        android:background="@mipmap/museum_detail_entry" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/museum_content_lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+                <TextView
+                    android:id="@+id/museum_detail_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="14dp"
+                    android:lineSpacingExtra="7dp"
+                    android:maxLines="4"
+                    android:textColor="#999"
+                    android:textSize="13sp" />
+
+                <RelativeLayout
+                    android:id="@+id/museum_detail_open_rel"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/museum_detail_open_img"
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_centerInParent="true"
+                        android:background="@mipmap/museum_arrow_down" />
+                </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/museum_announcement_lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="公告"
+                        android:textColor="#333"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/museum_detail_no_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="14dp"
+                        android:visibility="gone"
+                        android:text="无"
+                        android:textColor="#666"
+                        android:textSize="13sp" />
+
+                    <com.zb.bilateral.view.LooperTextView
+                        android:id="@+id/looper_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/museum_activity_lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="活动"
+                        android:textColor="#222"
+                        android:textSize="16sp" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/museum_detail_activity_recy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/museum_info_lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="资讯"
+                        android:textColor="#444"
+                        android:textSize="16sp" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/museum_detail_news_recy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/main_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/museum_buttom_rel" />
+
+    <RelativeLayout
+        android:id="@+id/museum_buttom_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/list_museum_detial_buttom" />
+    </RelativeLayout>
+</RelativeLayout>

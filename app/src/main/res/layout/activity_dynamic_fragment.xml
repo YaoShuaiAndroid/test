@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5f5f5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/museum_top_rel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/top_color">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="博物馆"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:id="@+id/top_left_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/left_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="动态"
+            android:textSize="18sp"
+            android:textColor="#FFF"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/dynamic_layout"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            app:tabIndicatorHeight="2dp"
+            android:background="#FFFFFF"
+            app:tabIndicatorColor="@color/main_color"
+            app:tabSelectedTextColor="@color/main_color"
+            app:tabTextAppearance="@style/MyCustomTabTextAppearance"
+            app:tabTextColor="#666666" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/dynamic_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
